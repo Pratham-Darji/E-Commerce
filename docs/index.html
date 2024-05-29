@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerece</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <section id="login-registration">
+      <div id="login-registration-wrapper">
+        <div id="lr-button">
+          <div id="login-btn" class="active">Sign In</div>
+          <div id="registration-btn">Registration</div>
+        </div>
+
+        <form id="login__form">
+          <input
+            type="text"
+            id="login-username"
+            placeholder="Username"
+            required
+          />
+
+          <input
+            type="password"
+            id="login-password"
+            placeholder="password"
+            autocomplete="on"
+            required
+          />
+
+          <input type="button" id="loginBtn" value="Login" onclick="login()" />
+        </form>
+
+        <form id="registration__form" class="unactive">
+          <input
+            type="text"
+            id="registration-name"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="registration-email"
+            placeholder="example@gamil.com"
+            required
+          />
+
+          <input
+            type="number"
+            id="registration-phone"
+            pattern="[0-9]+"
+            placeholder="1234567890"
+            required
+          />
+
+          <input
+            type="text"
+            id="registration-username"
+            placeholder="Unique Username"
+            required
+          />
+
+          <input
+            type="password"
+            id="registration-password"
+            placeholder="password"
+            autocomplete="on"
+            required
+          />
+
+          <input
+            type="button"
+            id="registerBtn"
+            value="Register"
+            onclick="registration()"
+          />
+          <p id="registerSuccess"></p>
+          <p id="registerError"></p>
+        </form>
+        <p id="error"></p>
+      </div>
+    </section>
+    <!-- Adding Main Script  -->
+    <script src="./js/login.js"></script>
+  </body>
+</html>

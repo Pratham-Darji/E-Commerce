@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <!-- Stylesheet for icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <section class="nav">
+      <span class="material-symbols-outlined" id="personInfo">
+        <a href="./personalInfo.html"> person </a>
+      </span>
+      <h2>PRODUCTS</h2>
+      <div class="spans">
+        <div class="cart">
+          <span class="material-symbols-outlined">
+            <a href="./view-cart.html">shopping_cart </a>
+          </span>
+          <div class="cartnumber" id="cart_number"></div>
+        </div>
+        <span class="material-symbols-outlined">
+          <a id="logout">logout</a>
+        </span>
+      </div>
+    </section>
+    <section id="output"></section>
+    <script src="./js/homepage.js"></script>
+  </body>
+</html>

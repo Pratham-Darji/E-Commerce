@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./css/adminPanel.css" />
+
+    <!-- Stylesheet for icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <section class="nav">
+      <span class="material-symbols-outlined" id="personInfo">
+        <a href="http://127.0.0.1:5500/frontend/personalInfo.html"> person </a>
+      </span>
+      <h2>ADMIN PANEL</h2>
+      <span class="material-symbols-outlined">
+        <a href="#" id="addProduct">add_circle</a>
+
+        <a id="logout" onclick="logout()">logout</a>
+      </span>
+    </section>
+
+    <div id="addProduct__div" class="unactive">
+      <form action="">
+        <div class="form">
+          <label for="name">Name: </label>
+          <input
+            id="productName"
+            type="text"
+            name="name"
+            placeholder="Something"
+            required
+          />
+
+          <label for="description">Description: </label>
+          <input
+            name="description"
+            id="productDescription"
+            type="text"
+            placeholder="product description"
+            required
+          />
+
+          <label for="price">Price: </label>
+          <input
+            id="productPrice"
+            name="price"
+            type="text"
+            placeholder="$999"
+            required
+          />
+
+          <label for="type">Type: </label>
+          <input
+            id="productType"
+            name="type"
+            type="text"
+            placeholder="Electronics"
+            required
+          />
+
+          <label for="image">Image URL: </label>
+          <input
+            id="imageUrl"
+            name="type"
+            type="text"
+            placeholder="https://.dummy.jpg"
+            required
+          />
+        </div>
+
+        <div class="submitbtn">
+          <input
+            type="submit"
+            id="CancelBtn"
+            value="Cancel"
+            onclick="window.location.reload()"
+          />
+          <input type="submit" value="Submit" id="submit-btn" />
+        </div>
+      </form>
+    </div>
+
+    <section id="output"></section>
+    <script src="./js/adminPanel.js"></script>
+  </body>
+</html>

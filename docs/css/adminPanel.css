@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0c134f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.unactive {
+  display: none;
+}
+
+#output {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #0c134f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #5c469c;
+  padding: 20px;
+  color: #f2f2f2;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.card__wrapper img {
+  width: 100%;
+  height: 200px;
+  /* margin-bottom: 10px; */
+}
+
+.card__wrapper span,
+.card__wrapper p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  background-color: #1d267d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: sticky;
+  top: 0;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+.nav span {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.material-symbols-outlined a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.nav h2 {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#addProduct__div {
+  background-color: #0c134f;
+  color: #f2f2f2;
+  margin: 0 auto;
+}
+
+#addProduct__div form .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+#addProduct__div form label {
+  margin-left: 15px;
+  font-weight: 600;
+}
+#addProduct__div form input {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.submitbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#submit-btn,
+#CancelBtn {
+  padding: 12px !important;
+  background-color: #1d267d;
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  background-color: #1d267d;
+  color: #f2f2f2;
+  padding: 2px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.error {
+  color: #f2f2f2;
+}
